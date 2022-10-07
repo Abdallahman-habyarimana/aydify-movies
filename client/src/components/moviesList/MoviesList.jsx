@@ -2,9 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./moviesList.scss"
 
-const MoviesList = ({ data}) => {
+const MoviesList = ({ data, count}) => {
     return (
         <div className="movies">
+            <div className="movies__count">
+                {
+                    count === 0 ? 
+                    (
+                        <span>
+                            No matching criteria found
+                        </span>
+                    ) :
+                    (
+                        <span>
+                            {count } Founds...
+                        </span>
+                    )
+                }
+            </div>
             <div className="movies__container">
                 {
                     data.map(movie => (

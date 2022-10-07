@@ -2,5 +2,32 @@
 .category {
     grid-column: 1 /  2;
     grid-row: 1 / -1;
-    background: #1b257b;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    &__list {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-item {
+            display: flex;
+            padding: 10px 20px;
+            background-color: antiquewhite;
+            display: flex;
+            gap: 5px;
+
+            &_icon {
+
+            }
+            
+
+            &_link {
+                cursor: pointer;
+            }
+        }
+    }
 }

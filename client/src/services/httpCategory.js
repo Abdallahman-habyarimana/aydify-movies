@@ -4,10 +4,6 @@ const category = [
         name: "Documentery",
     },
     {
-        id: 1,
-        name: "Documentery",
-    },
-    {
         id: 4,
         name: "Romance",
     },
@@ -22,6 +18,26 @@ const category = [
     {
         id: 2,
         name: "Science & Fiction",
+    },
+    {
+        id: 6,
+        name: "Thriller",
+    },
+    {
+        id: 7,
+        name: "Fantasy",
+    },
+    {
+        id: 8,
+        name: "Sports",
+    },
+    {
+        id: 9,
+        name: "Western",
+    },
+    {
+        id: 10,
+        name: "International",
     },
 ]
 
