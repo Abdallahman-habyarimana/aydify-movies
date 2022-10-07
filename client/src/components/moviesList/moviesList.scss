@@ -1,0 +1,41 @@
+.movies {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 2rem;
+        padding: 15px;
+       
+    }
+
+    &__item {
+
+        border-radius: 15%;
+
+        &-img {
+            width: 200px;
+            height: 200px;
+        }
+
+        &-detail {
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-align: center;
+            width: 100%;
+
+            :hover {
+                color: #801245;
+                
+            }
+        }
+    }
+}

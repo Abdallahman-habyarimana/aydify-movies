@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: auto;
+    width: 100%;
+}
+
+// a:hover {
+//     color: #bb2145;
+// }
+
+// a:visited, 
+// a::before:visited,
+// a::after:visited {
+//     color: grey;
+// }

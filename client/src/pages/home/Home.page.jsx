@@ -1,26 +1,22 @@
 
 import React, { useState } from 'react'
+import Category from '../../components/category/Category';
+import Header from '../../components/header/Header';
+import MoviesList from '../../components/moviesList/MoviesList';
+import { httpGetCategory } from '../../services/httpCategory';
 import { httpGetMovies } from '../../services/httpMovies';
-
-const MoviesList = (props) => {
-    const { data } = props
-    return (
-        <>
-            {
-                data.map(movie => (
-                    <span>{movie.title}</span>
-            ))
-        }
-        </>
-    )
-}
+import "./home.scss"
 
 const Home = () => {
     const [movies, setMovies] = useState(httpGetMovies());
+    const [category, setCategory] = useState(httpGetCategory());
+    
   return (
-    <>
+    <div className="home__container">
+        <Header />
+        <Category category={category} />
         <MoviesList data={movies} />
-    </>
+    </div>
   )
 }
 
