@@ -15,7 +15,7 @@ const Category = ({ category, onCategory}) => {
         {
           category.map(cat => (
             <div className="category__list-item" key={cat.id}>
-              <span>Icon</span>
+              <img src={cat.icons} />
               <span onClick={() => onCategory(cat.name)} className="category__list-item_link">{cat.name}</span>
             </div>
           ))

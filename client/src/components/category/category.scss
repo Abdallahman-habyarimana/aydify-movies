@@ -12,13 +12,14 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding: 10px;
 
         &-item {
             display: flex;
             padding: 10px 20px;
-            background-color: antiquewhite;
             display: flex;
             gap: 5px;
+            position: relative;
 
             &_icon {
 
@@ -27,6 +28,21 @@
 
             &_link {
                 cursor: pointer;
+                font-size: 1.2rem;
+                font-weight: 400;
+                
+            }
+
+            ::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                background: grey;
+                width: 100%;
+                opacity: 0.5;
+
             }
         }
     }
